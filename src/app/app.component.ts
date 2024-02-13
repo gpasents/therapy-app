@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'therapy-app';
+
+  constructor(private translateService: TranslateService) {
+    this.translateService.setDefaultLang('en');
+    this.translateService.use('en');
+  }
+
+  switchLanguage() {
+    this.translateService.use(
+      this.translateService.currentLang === 'en' ? 'el' : 'en'
+    );
+  }
 }
