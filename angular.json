@@ -35,7 +35,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/bootstrap.min.css",
+              "src/styles.css",
+              "src/assets/icomoon/icomoon.css",
+              "src/css/vendor.css"
             ],
             "scripts": []
           },
