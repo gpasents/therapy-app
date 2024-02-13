@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService, private modalService: NgbModal) {
     this.translateService.setDefaultLang('en');
     this.translateService.use('en');
   }
@@ -17,5 +18,10 @@ export class AppComponent {
     this.translateService.use(
       this.translateService.currentLang === 'en' ? 'el' : 'en'
     );
+  }
+
+
+  public open(modal: any): void {
+    this.modalService.open(modal);
   }
 }
