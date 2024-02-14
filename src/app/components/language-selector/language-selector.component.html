@@ -1,12 +1,11 @@
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-    aria-expanded="false"><img src="../../../assets/images/{{selectedLanguageIcon}}" style="width: 20px; height: 20px;">
+    aria-expanded="false"><img src="../../../assets/images/{{selectedLanguageIcon}}" class="language-image">
     {{selectedLanguageName}}
 </a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
     <ng-container *ngFor="let supportedLanguage of supportedLanguages">
-
-        <li><img src="../../../assets/images/{{supportedLanguage.icon}}" style="width: 20px; height: 20px;"> <a
-                class="dropdown-item" href="#"
-                (click)="changeLanguage(supportedLanguage.code)">{{supportedLanguage.name}}</a></li>
+        <li> <a class="dropdown-item" href="#" (click)="switchLanguage(supportedLanguage.code)"><img
+                    src="../../../assets/images/{{supportedLanguage.icon}}" class="language-image"
+                    alt="language">{{supportedLanguage.name}}</a></li>
     </ng-container>
 </ul>

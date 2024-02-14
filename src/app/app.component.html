@@ -6,39 +6,42 @@
     <nav id="navbar">
       <div class="main-menu" id="navigation">
         <ul class="menu-list navbar-nav">
-          <li class="menu-item"><a href="index.html" data-effect="Home" class="nav-link">Home</a></li>
-          <li class="menu-item"><a href="#about" data-effect="about" class="nav-link">About</a></li>
-          <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link">Shop</a>
-          </li>
-          <li class="menu-item nav-item">
-            <a href="#collection" data-effect="collection" class="nav-link">Collection</a>
-          </li>
-          <li class="menu-item">
-            <a href="#latest-blog" data-effect="latest-blog" class="nav-link">Blog</a>
-          </li>
+          <!-- Use translation keys directly in i18n properties and content -->
+          <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{ 'aboutLink'
+              | translate }}</a></li>
+          <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link" i18n="@@shopLink">{{
+              'shopLink' | translate }}</a></li>
+          <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
+              i18n="@@collectionLink">{{ 'collectionLink' | translate }}</a></li>
+          <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link" i18n="@@blogLink">{{
+              'blogLink' | translate }}</a></li>
           <li class="nav-item dropdown">
-            <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Pages</a>
+            <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"
+              i18n="@@pagesLink">{{ 'pagesLink' | translate }}</a>
             <ul class="dropdown-menu">
-              <li><a href="about.html" class="dropdown-item">About us <span class="badge bg-primary">PRO</span></a></li>
-              <li><a href="blog.html" class="dropdown-item">Blog <span class="badge bg-primary">PRO</span></a></li>
-              <li><a href="single-post.html" class="dropdown-item">Single Post <span
+              <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate }} <span
                     class="badge bg-primary">PRO</span></a></li>
-              <li><a href="contact.html" class="dropdown-item">Contact us <span class="badge bg-primary">PRO</span></a>
-              </li>
-              <li><a href="shop.html" class="dropdown-item">Shop <span class="badge bg-primary">PRO</span></a></li>
-              <li><a href="single-product.html" class="dropdown-item">Single Product <span
+              <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
                     class="badge bg-primary">PRO</span></a></li>
+              <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
+                  translate }}</a></li>
+              <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' | translate }}
+                  <span class="badge bg-primary">PRO</span></a></li>
+              <li><a href="shop.html" class="dropdown-item" i18n="@@shopLink">{{ 'shopLink' | translate }} <span
+                    class="badge bg-primary">PRO</span></a></li>
+              <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{ 'singleProductLink'
+                  | translate }} <span class="badge bg-primary">PRO</span></a></li>
             </ul>
           </li>
-
-          <li><a href="https://templatesjungle.gumroad.com/l/plantly-free-plant-selling-website-template"
-              target="_blank" class="btn btn-dark rounded-pill m-0">Get PRO</a></li>
         </ul>
       </div>
 
-      <app-language-selector>
-      </app-language-selector>
-      <!-- <div class="right-element icon-element">
+
+      <div class="language-wrapper">
+        <app-language-selector>
+        </app-language-selector>
+      </div>
+      <div class="right-element icon-element">
         <div class="search-bar">
           <a href="#" class="search-button search-toggle" data-selector="#header-wrap">
             <i class="icon icon-search"></i>
@@ -63,14 +66,14 @@
           </a>
         </div>
 
-      </div>-->
+      </div>
 
     </nav>
 
   </div><!--header-wrap-->
 </header>
 
-<section id="intro" class="scrollspy-section swiper intro-swiper">
+<!-- <section id="intro" class="scrollspy-section swiper intro-swiper">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
@@ -82,9 +85,9 @@
             <i class="icon icon-arrow-right"></i>
           </a>
         </div>
-      </div><!--banner-content-->
+      </div>
       <img src="../assets/images/main-banner.png" alt="banner">
-    </div><!--swiper-slide-->
+    </div>
 
     <div class="swiper-slide">
       <div class="banner-content">
@@ -94,9 +97,9 @@
             <i class="icon icon-arrow-right"></i>
           </a>
         </div>
-      </div><!--banner-content-->
+      </div>
       <img src="../assets/images/main-banner2.jpg " alt="banner">
-    </div><!--swiper-slide-->
+    </div>
 
     <div class="swiper-slide">
       <div class="banner-content">
@@ -106,9 +109,9 @@
             <i class="icon icon-arrow-right"></i>
           </a>
         </div>
-      </div><!--banner-content-->
+      </div>
       <img src="../assets/images/main-banner.png" alt="banner">
-    </div><!--swiper-slide-->
+    </div>
 
     <div class="swiper-slide">
       <div class="banner-content">
@@ -118,14 +121,14 @@
             <i class="icon icon-arrow-right"></i>
           </a>
         </div>
-      </div><!--banner-content-->
+      </div>
       <img src="../assets/images/main-banner2.jpg" alt="banner">
-    </div><!--swiper-slide-->
+    </div>
 
-  </div><!--slider-->
+  </div>
 
   <div class="swiper-pagination"></div>
-</section>
+</section> -->
 
 <button id="scroll-up"><i class="icon icon-arrow-up"></i></button>
 

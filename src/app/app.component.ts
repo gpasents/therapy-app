@@ -14,12 +14,6 @@ export class AppComponent {
     this.translateService.use('en');
   }
 
-  switchLanguage() {
-    this.translateService.use(
-      this.translateService.currentLang === 'en' ? 'el' : 'en'
-    );
-  }
-
 
   public open(modal: any): void {
     this.modalService.open(modal);

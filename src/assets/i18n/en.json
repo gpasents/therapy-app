@@ -1,3 +1,13 @@
 {
-    "greeting": "Hello, World!"
+    "greeting": "Hello, World!",
+    "homeLink": "Home",
+    "aboutLink": "About",
+    "shopLink": "Shop",
+    "collectionLink": "Collection",
+    "blogLink": "Blog",
+    "pagesLink": "Pages",
+    "aboutUsLink": "About us",
+    "singlePostLink": "Single Post",
+    "contactUsLink": "Contact us",
+    "singleProductLink": "Single Product"
 }

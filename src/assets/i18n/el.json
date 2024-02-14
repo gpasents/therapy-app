@@ -1,3 +1,13 @@
 {
-    "greeting": "Γειά σου, Κόσμε!"
+    "greeting": "Γεια",
+    "homeLink": "Αρχική",
+    "aboutLink": "Σχετικά με εμάς",
+    "shopLink": "Κατάστημα",
+    "collectionLink": "Συλλογή",
+    "blogLink": "Ιστολόγιο",
+    "pagesLink": "Σελίδες",
+    "aboutUsLink": "Σχετικά με εμάς",
+    "singlePostLink": "Μονό Άρθρο",
+    "contactUsLink": "Επικοινωνήστε μαζί μας",
+    "singleProductLink": "Μονό Προϊόν"
 }

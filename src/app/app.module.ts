@@ -8,6 +8,9 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LanguageService } from './services/language.service';
+import { TranslationService } from './services/translation-service.service';
+
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,7 +35,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LanguageService,
+    TranslationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
