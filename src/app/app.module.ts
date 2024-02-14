@@ -10,6 +10,7 @@ import { LanguageSelectorComponent } from './components/language-selector/langua
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LanguageService } from './services/language.service';
 import { TranslationService } from './services/translation-service.service';
+import { CarouselComponent } from './components/carousel/carousel/carousel.component';
 
 
 
@@ -20,10 +21,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
   ],
   imports: [
     BrowserModule,
+    CarouselComponent,
     NgbModule,
     HttpClientModule,
     TranslateModule.forRoot({
