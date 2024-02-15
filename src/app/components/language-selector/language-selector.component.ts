@@ -18,10 +18,10 @@ export class LanguageSelectorComponent {
   selectedLanguageIcon: string;
 
   constructor(private translationService: TranslationService, private languageService: LanguageService) {
-    this.languageService.setLanguage('el');
-    this.selectedLanguage = 'el'
-    this.selectedLanguageName = "Ελληνικά";
-    this.selectedLanguageIcon = "language-greek.png"
+    this.languageService.setLanguage('en');
+    this.selectedLanguage = this.supportedLanguages[0].code
+    this.selectedLanguageName = this.supportedLanguages[0].name
+    this.selectedLanguageIcon = this.supportedLanguages[0].icon
   }
 
 

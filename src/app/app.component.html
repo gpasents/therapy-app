@@ -1,84 +1,80 @@
-<header id="header" class="fixed">
-  <div id="header-wrap">
-    <div class="main-logo">
-      <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+<div>
+  <div class="logo-header">
+    george
+  </div>
+  <div class="headers">
+    <div class="header">
+      <div class="contact-info">
+        <span><i class="bi bi-telephone icon"></i>
+          <p>+1 (123) 456-7890</p>
+        </span>
+        <span><i class="bi bi-envelope icon"></i>
+          <p>infoom</p>
+        </span>
+      </div>
+      <div class="social-media">
+        <a href="#" class="icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="icon"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
+      </div>
     </div>
-    <nav id="navbar">
-      <div class="main-menu" id="navigation">
-        <ul class="menu-list navbar-nav">
-          <!-- Use translation keys directly in i18n properties and content -->
-          <li class="menu-item"><a href="#home" data-effect="about" class="nav-link" i18n="@@homeLink">{{ 'homeLink'
-              | translate }}</a></li>
-          <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{ 'aboutLink'
-              | translate }}</a></li>
-          <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link" i18n="@@shopLink">{{
-              'shopLink' | translate }}</a></li>
-          <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
-              i18n="@@collectionLink">{{ 'collectionLink' | translate }}</a></li>
-          <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link" i18n="@@blogLink">{{
-              'blogLink' | translate }}</a></li>
-          <li class="nav-item dropdown">
-            <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"
-              i18n="@@pagesLink">{{ 'pagesLink' | translate }}</a>
-            <ul class="dropdown-menu">
-              <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate }} <span
-                    class="badge bg-primary">PRO</span></a></li>
-              <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
-                    class="badge bg-primary">PRO</span></a></li>
-              <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
-                  translate }}</a></li>
-              <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' | translate }}
-                  <span class="badge bg-primary">PRO</span></a></li>
-              <li><a href="shop.html" class="dropdown-item" i18n="@@shopLink">{{ 'shopLink' | translate }} <span
-                    class="badge bg-primary">PRO</span></a></li>
-              <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{ 'singleProductLink'
-                  | translate }} <span class="badge bg-primary">PRO</span></a></li>
+    <header id="header" class="fixed">
+      <div id="header-wrap">
+        <div class="main-logo">
+          <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+        </div>
+        <nav id="navbar">
+          <div class="main-menu" id="navigation">
+            <ul class="menu-list navbar-nav">
+              <!-- Use translation keys directly in i18n properties and content -->
+              <li class="menu-item"><a href="#home" data-effect="about" class="nav-link" i18n="@@homeLink">{{ 'homeLink'
+                  | translate }}</a></li>
+              <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{
+                  'aboutLink'
+                  | translate }}</a></li>
+              <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link"
+                  i18n="@@servicesLink">{{
+                  'servicesLink' | translate }}</a></li>
+              <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
+                  i18n="@@contactLink">{{ 'contactLink' | translate }}</a></li>
+              <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link"
+                  i18n="@@blogLink">{{
+                  'blogLink' | translate }}</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"
+                  i18n="@@pagesLink">{{ 'pagesLink' | translate }}</a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate }}
+                      <span class="badge bg-primary">PRO</span></a></li>
+                  <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
+                        class="badge bg-primary">PRO</span></a></li>
+                  <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
+                      translate }}</a></li>
+                  <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' | translate
+                      }}
+                      <span class="badge bg-primary">PRO</span></a></li>
+                  <li><a href="shop.html" class="dropdown-item" i18n="@@servicesLink">{{ 'servicesLink' | translate }}
+                      <span class="badge bg-primary">PRO</span></a></li>
+                  <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{
+                      'singleProductLink'
+                      | translate }} <span class="badge bg-primary">PRO</span></a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="language-wrapper">
+            <app-language-selector>
+            </app-language-selector>
+          </div>
+
+        </nav>
       </div>
-
-
-      <div class="language-wrapper">
-        <app-language-selector>
-        </app-language-selector>
-      </div>
-      <div class="right-element icon-element">
-        <div class="search-bar">
-          <a href="#" class="search-button search-toggle" data-selector="#header-wrap">
-            <i class="icon icon-search"></i>
-          </a>
-          <form role="search" method="get" class="search-box">
-            <input class="search-field text search-input" placeholder="Search" type="search">
-          </form>
-        </div>
-
-
-        <div class="like-bar for-buy">
-          <a href="#">
-            <i class="icon icon-like-button"></i>
-            <i class="icon icon-liked-button"></i>
-          </a>
-        </div>
-
-        <div class="cart for-buy">
-          <a href="#">
-            <i class="icon icon-account"></i>
-            <span>0</span>
-          </a>
-        </div>
-
-      </div>
-    </nav>
+    </header>
   </div>
-</header>
-<section>
-  <div>
-    <app-carousel>
+  <app-carousel>
 
-    </app-carousel>
-  </div>
-</section>
+  </app-carousel>
+</div>
 
 <button id="scroll-up"><i class="icon icon-arrow-up"></i></button>
 
@@ -102,14 +98,12 @@
       <div class="col-md-6 video-content">
         <img src="../assets/images/lena.jpg" alt="lena">
       </div>
-      <div class="col-md-5 description">
+      <div class="col-md-6 description">
         <div class="section-header">
           <h2 class="section-title">About me</h2>
         </div>
-
         <p>{{ 'aboutBio'
           | translate }}</p>
-
         <div class="btn-wrap">
           <a href="#" class="btn btn-black btn-xlarge btn-rounded">Read More
             <i class="icon icon-arrow-right"></i></a>
@@ -353,74 +347,6 @@
   </div>
 </section>
 
-<section id="testimonial" class="scrollspy-section margin-xlarge">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-6">
-        <figure class="testimonial-image">
-          <img src="../assets/images/review-image.png" alt="review">
-        </figure>
-      </div>
-
-      <div class="col-md-6">
-        <div class="swiper testimonial-slider">
-          <div class="swiper-wrapper">
-
-            <div class="testimonial-item swiper-slide">
-              <div class="testimonials-inner">
-                <q>Cursus posuere rutrum nisl nunc, integer viverra ipsum urna, orci. Scelerisque
-                  ultrices orci sit placerat sollicitudin ac. Dictum pretium mi adipiscing
-                  suspendisse sit arcu quam morbi nibh lobortis dolor.</q>
-                <div class="testimonial-author">
-                  <div class="author-detail">
-                    <div class="name">Rohn Rogan</div>
-                    <div class="author-title">By Customer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-item swiper-slide">
-              <div class="testimonials-inner">
-                <q>At the core of our practice is the idea that cities are the incubators of our
-                  greatest achievements, and the best hope for a sustainable future.</q>
-                <div class="testimonial-author">
-                  <div class="author-detail">
-                    <div class="name">John Logan</div>
-                    <div class="author-title">By Customer</div>
-                  </div>
-                </div>
-              </div>
-            </div><!--testimonial-item-->
-
-            <div class="testimonial-item swiper-slide">
-              <div class="testimonials-inner">
-                <q>Our practice is the idea that cities are the incubators of our greatest
-                  achievements, and the best hope for a sustainable future.</q>
-                <div class="testimonial-author">
-                  <div class="author-detail">
-                    <div class="name">Mike Smith</div>
-                    <div class="author-title">By Customer</div>
-                  </div>
-                </div>
-              </div>
-            </div><!--testimonial-item-->
-
-          </div>
-
-          <div class="button-container">
-            <div class="swiper-button-prev icon icon-arrow-left"></div>
-            <div class="swiper-button-next icon icon-arrow-right"></div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <section id="services">
   <div class="container">
     <div class="row">
@@ -564,16 +490,7 @@
           <p>© 2021 TemplatesJungle. Designed by <a href="https://www.templatesjungle.com/"
               target="_blank">TemplatesJungle</a></p>
         </div>
-        <div class="social-links">
-          <p>Social Links:</p>
-          <ul>
-            <li><i class="icon icon-facebook"></i></li>
-            <li><i class="icon icon-twitter"></i></li>
-            <li><i class="icon icon-behance"></i></li>
-            <li><i class="icon icon-youtube-play"></i></li>
-            <li><i class="icon icon-pinterest"></i></li>
-          </ul>
-        </div>
+
       </div>
 
     </div>
