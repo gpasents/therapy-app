@@ -1213,18 +1213,17 @@ html {
     align-items: center;
     padding: 40px;
     margin-right: 60px;
-    transition: 0.5s all ease-out;
+    /* transition: 0.5s all ease-out; */
 }
 
 .main-logo a {
     margin: 0 auto;
-    transition: 0.5s all ease-out;
+    /* transition: 0.5s all ease-out; */
 }
 
 /*----- Header Menu
   --------------------------------------------------------------*/
 header {
-    margin-bottom: 30px;
     height: var(--header-height);
     transition: 0.3s all ease-out;
 }
@@ -2109,22 +2108,44 @@ nav#navbar ul.menu-list {
     }
 }
 
+.header-container {
+    display: flex;
+    width: 100%;
+}
+
+.logo-header {
+    width: 20%;
+}
+
+.headers {
+    width: 80%;
+}
+
+
 .header {
     background-color: #fff;
     color: #000;
     padding: 5px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
 }
 
 .contact-info {
+    margin-right: 15px;
     font-size: 16px;
     display: flex;
+    align-items: center;
     gap: 20px;
 
+    p {
+        margin: 0;
+        align-self: center;
+    }
+
     span {
+        gap: 10px;
         display: flex;
         flex-direction: row;
     }
