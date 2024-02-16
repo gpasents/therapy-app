@@ -1,12 +1,6 @@
-<div class="header-container">
-  <div class="logo-header">
-    <div class="main-logo">
-      <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
-
-    </div>
-  </div>
-  <div class="headers">
-    <div class="header">
+<div class="my-div">
+  <div style="background-color: #fff;">
+    <div class="header container">
       <div class="contact-info">
         <span><i class="bi bi-telephone icon"></i>
           <p>+1 (123) 456-7890</p>
@@ -22,61 +16,71 @@
       </div>
     </div>
     <header id="header" class="fixed">
-      <div id="header-wrap">
-        <nav id="navbar">
-          <div class="main-menu" id="navigation">
-            <ul class="menu-list navbar-nav">
-              <!-- Use translation keys directly in i18n properties and content -->
-              <li class="menu-item"><a href="#home" data-effect="about" class="nav-link" i18n="@@homeLink">{{ 'homeLink'
-                  | translate }}</a></li>
-              <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{
-                  'aboutLink'
-                  | translate }}</a></li>
-              <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link"
-                  i18n="@@servicesLink">{{
-                  'servicesLink' | translate }}</a></li>
-              <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
-                  i18n="@@contactLink">{{ 'contactLink' | translate }}</a></li>
-              <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link"
-                  i18n="@@blogLink">{{
-                  'blogLink' | translate }}</a></li>
-              <li class="nav-item dropdown">
-                <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"
-                  i18n="@@pagesLink">{{ 'pagesLink' | translate }}</a>
-                <ul class="dropdown-menu">
-                  <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate }}
-                      <span class="badge bg-primary">PRO</span></a></li>
-                  <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
-                        class="badge bg-primary">PRO</span></a></li>
-                  <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
-                      translate }}</a></li>
-                  <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' | translate
-                      }}
-                      <span class="badge bg-primary">PRO</span></a></li>
-                  <li><a href="shop.html" class="dropdown-item" i18n="@@servicesLink">{{ 'servicesLink' | translate }}
-                      <span class="badge bg-primary">PRO</span></a></li>
-                  <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{
-                      'singleProductLink'
-                      | translate }} <span class="badge bg-primary">PRO</span></a></li>
+      <div style="background-color: #EBEEE3;">
+        <div class="container">
+          <div id="header-wrap">
+            <div class="main-logo">
+              <a href="index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+            </div>
+            <nav id="navbar">
+              <div class="main-menu" id="navigation">
+                <ul class="menu-list navbar-nav">
+                  <!-- Use translation keys directly in i18n properties and content -->
+                  <li class="menu-item"><a href="#home" data-effect="about" class="nav-link" i18n="@@homeLink">{{
+                      'homeLink'
+                      | translate }}</a></li>
+                  <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{
+                      'aboutLink'
+                      | translate }}</a></li>
+                  <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link"
+                      i18n="@@servicesLink">{{
+                      'servicesLink' | translate }}</a></li>
+                  <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
+                      i18n="@@contactLink">{{ 'contactLink' | translate }}</a></li>
+                  <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link"
+                      i18n="@@blogLink">{{
+                      'blogLink' | translate }}</a></li>
+                  <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle"
+                      i18n="@@pagesLink">{{ 'pagesLink' | translate }}</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate
+                          }}
+                          <span class="badge bg-primary">PRO</span></a></li>
+                      <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
+                            class="badge bg-primary">PRO</span></a></li>
+                      <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
+                          translate }}</a></li>
+                      <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' |
+                          translate
+                          }}
+                          <span class="badge bg-primary">PRO</span></a></li>
+                      <li><a href="shop.html" class="dropdown-item" i18n="@@servicesLink">{{ 'servicesLink' | translate
+                          }}
+                          <span class="badge bg-primary">PRO</span></a></li>
+                      <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{
+                          'singleProductLink'
+                          | translate }} <span class="badge bg-primary">PRO</span></a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="language-wrapper">
-            <app-language-selector>
-            </app-language-selector>
-          </div>
+              </div>
+              <div class="language-wrapper">
+                <app-language-selector>
+                </app-language-selector>
+              </div>
 
-        </nav>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
   </div>
 </div>
-
-<app-carousel>
-
-</app-carousel>
-
+<div class="mt-5">
+  <app-carousel>
+  </app-carousel>
+</div>
 <button id="scroll-up"><i class="icon icon-arrow-up"></i></button>
 
 <section id="association" class="scrollspy-section bg-accent padding-large margin-xlarge">
