@@ -1,3 +1,74 @@
 .language-wrapper {
     margin-left: 10px;
 }
+
+.custom-toggle-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: #ebeee3;
+    /* Updated color */
+    color: #333;
+    /* Text color for better contrast */
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* Initially hide the button */
+}
+
+.custom-menu-icon {
+    margin-left: 5px;
+}
+
+.custom-sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 3;
+    background-color: #ebeee3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.custom-sidebar.custom-open {
+    right: 0;
+    width: 250px;
+    /* Move the sidebar to the right when it's open */
+}
+
+.custom-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Media query to show/hide button and sidebar based on screen width */
+@media screen and (max-width: 991px) {
+    .custom-toggle-btn {
+        display: inline-block;
+        /* Show the button when the screen width is 991px or less */
+    }
+
+    .custom-sidebar {
+        padding-top: 30px;
+        /* Adjust padding for better mobile view */
+    }
+
+    .custom-sidebar.custom-open {
+        right: 0;
+        /* Move the sidebar to the right when it's open on smaller screens */
+    }
+
+    .custom-close-btn {
+        top: 20px;
+        /* Adjust top position for the close button on smaller screens */
+    }
+
+    .header {
+        display: none;
+    }
+}
