@@ -11,6 +11,7 @@ export class AppComponent {
 
   constructor(private translateService: TranslateService, private modalService: NgbModal) {
     this.translateService.setDefaultLang('en');
+    this.translateService.use('en')
   }
 
   isSidebarOpen = false;

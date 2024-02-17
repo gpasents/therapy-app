@@ -30,8 +30,11 @@
       </ul>
     </li>
   </ul>
+  <app-language-selector>
+  </app-language-selector>
 </div>
-<div class="my-div">
+<div class="overlay" [ngClass]="{'overlay-open': isSidebarOpen}" (click)="toggleSidebar()"></div>
+<div>
   <div style="background-color: #fff;">
     <div class="header container">
       <div class="contact-info">
