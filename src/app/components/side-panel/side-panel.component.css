@@ -1,0 +1,132 @@
+.custom-toggle-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: #ebeee3;
+    /* Updated color */
+    color: #333;
+    /* Text color for better contrast */
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* Initially hide the button */
+}
+
+.custom-menu-icon {
+    margin-left: 5px;
+}
+
+.custom-sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 3;
+    background-color: #ebeee3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    line-height: var(--header-height);
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: 0.5s all ease-out;
+
+}
+
+.custom-sidebar.custom-open {
+    right: 0;
+    width: 250px;
+}
+
+.custom-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Media query to show/hide button and sidebar based on screen width */
+@media screen and (max-width: 991px) {
+    .custom-toggle-btn {
+        display: inline-block;
+    }
+
+    .custom-sidebar {
+        padding-top: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .custom-sidebar.custom-open {
+        right: 0;
+    }
+
+    .custom-close-btn {
+        top: 20px;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.overlay-open {
+    display: block;
+}
+
+.sidebar-menu a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Style for the sidebar menu links */
+.sidebar-menu a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Underline animation */
+.sidebar-menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 1s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.sidebar-menu a:hover {
+    color: #6aa864;
+    /* Lighter green color on hover */
+}
+
+/* Hover effect for the underline */
+.sidebar-menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #6aa864;
+    /* Lighter green color on hover */
+}

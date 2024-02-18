@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LanguageService } from './services/language.service';
 import { TranslationService } from './services/translation-service.service';
 import { CarouselComponent } from './components/carousel/carousel/carousel.component';
+import { SidePanelComponent } from './components/side-panel/side-panel.component';
 
 
 
@@ -22,6 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     LanguageSelectorComponent,
+    SidePanelComponent,
   ],
   imports: [
     BrowserModule,

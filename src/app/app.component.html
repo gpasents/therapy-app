@@ -1,39 +1,5 @@
-<div class="custom-sidebar" [ngClass]="{'custom-open': isSidebarOpen}">
-  <label for="toggleSidebar" class="custom-close-btn" (click)="isSidebarOpen=false">&times;</label>
-  <ul class="sidebar-menu">
-    <li class="menu-item"><a href="#home" data-effect="about" class="nav-link" i18n="@@homeLink">{{
-        'homeLink' | translate }}</a></li>
-    <li class="menu-item"><a href="#about" data-effect="about" class="nav-link" i18n="@@aboutLink">{{
-        'aboutLink' | translate }}</a></li>
-    <li class="menu-item"><a href="#fresh-arrivals" data-effect="shop" class="nav-link" i18n="@@servicesLink">{{
-        'servicesLink' | translate }}</a></li>
-    <li class="menu-item nav-item"><a href="#collection" data-effect="collection" class="nav-link"
-        i18n="@@contactLink">{{ 'contactLink' | translate }}</a></li>
-    <li class="menu-item"><a href="#latest-blog" data-effect="latest-blog" class="nav-link" i18n="@@blogLink">{{
-        'blogLink' | translate }}</a></li>
-    <li class="nav-item dropdown">
-      <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle" i18n="@@pagesLink">{{
-        'pagesLink' | translate }}</a>
-      <ul class="dropdown-menu">
-        <li><a href="about.html" class="dropdown-item" i18n="@@aboutUsLink">{{ 'aboutUsLink' | translate }}
-            <span class="badge bg-primary">PRO</span></a></li>
-        <li><a href="blog.html" class="dropdown-item" i18n="@@blogLink">{{ 'blogLink' | translate }} <span
-              class="badge bg-primary">PRO</span></a></li>
-        <li><a href="single-post.html" class="dropdown-item" i18n="@@singlePostLink">{{ 'singlePostLink' |
-            translate }}</a></li>
-        <li><a href="contact.html" class="dropdown-item" i18n="@@contactUsLink">{{ 'contactUsLink' | translate }}
-            <span class="badge bg-primary">PRO</span></a></li>
-        <li><a href="shop.html" class="dropdown-item" i18n="@@servicesLink">{{ 'servicesLink' | translate }}
-            <span class="badge bg-primary">PRO</span></a></li>
-        <li><a href="single-product.html" class="dropdown-item" i18n="@@singleProductLink">{{ 'singleProductLink' |
-            translate }} <span class="badge bg-primary">PRO</span></a></li>
-      </ul>
-    </li>
-  </ul>
-  <app-language-selector>
-  </app-language-selector>
-</div>
-<div class="overlay" [ngClass]="{'overlay-open': isSidebarOpen}" (click)="toggleSidebar()"></div>
+<app-side-panel [isSidebarOpen]="togglePanel" (onClose)="toggle($event)">
+</app-side-panel>
 <div>
   <div style="background-color: #fff;">
     <div class="header container">
@@ -105,7 +71,7 @@
                 <app-language-selector>
                 </app-language-selector>
               </div>
-              <button class="custom-toggle-btn" (click)="toggleSidebar()">
+              <button class="custom-toggle-btn" (click)="togglePanel = true">
                 Menu
                 <span class="custom-menu-icon">&#9776;</span>
               </button>
@@ -121,7 +87,7 @@
   <app-carousel>
   </app-carousel>
 </div>
-<button id="scroll-up"><i class="icon icon-arrow-up"></i></button>
+<button id="scroll-up" (click)="scrollToTop()"><i class="icon icon-arrow-up"></i></button>
 
 <section id="association" class="scrollspy-section bg-accent padding-large margin-xlarge">
   <div class="container">
@@ -550,18 +516,3 @@
 <script src="js/ui-easing.js"></script>
 <script src="js/videopopup.js"></script>
 <script src="js/script.js"></script>
-
-
-<script>
-  var scrollToTopBtn = document.getElementById("scroll-up");
-  var rootElement = document.documentElement;
-
-  function scrollToTop() {
-    // Scroll to top logic
-    rootElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-  scrollToTopBtn.addEventListener("click", scrollToTop);
-</script>

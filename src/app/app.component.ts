@@ -8,15 +8,24 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+  togglePanel: boolean;
   constructor(private translateService: TranslateService, private modalService: NgbModal) {
+    this.togglePanel = false
     this.translateService.setDefaultLang('en');
     this.translateService.use('en')
   }
 
-  isSidebarOpen = false;
+  toggle(test: boolean) {
+    this.togglePanel = !this.togglePanel
+  }
 
-  toggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
+
+  scrollToTop() {
+    var scrollToTopBtn = document.getElementById("scroll-up");
+    var rootElement = document.documentElement;
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 }
