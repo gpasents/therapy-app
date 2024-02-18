@@ -12,6 +12,7 @@ import { LanguageService } from './services/language.service';
 import { TranslationService } from './services/translation-service.service';
 import { CarouselComponent } from './components/carousel/carousel/carousel.component';
 import { SidePanelComponent } from './components/side-panel/side-panel.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -24,6 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     LanguageSelectorComponent,
     SidePanelComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

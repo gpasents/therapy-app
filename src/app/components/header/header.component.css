@@ -1,0 +1,115 @@
+.language-wrapper {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .language-wrapper {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .custom-toggle-btn,
+    .custom-sidebar {
+        display: none;
+    }
+}
+
+.custom-toggle-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: #ebeee3;
+    /* Updated color */
+    color: #333;
+    /* Text color for better contrast */
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* Initially hide the button */
+}
+
+/* Media query to show/hide button and sidebar based on screen width */
+@media screen and (max-width: 991px) {
+    .custom-toggle-btn {
+        display: inline-block;
+    }
+}
+
+/* Style for the main-menu links */
+.main-menu a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Underline animation for main-menu */
+.main-menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 1s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for main-menu */
+.main-menu a:hover {
+    color: #4CAF50;
+    /* Lighter green color on hover */
+}
+
+/* Hover effect for the underline in main-menu */
+.main-menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #4CAF50;
+    /* Lighter green color on hover */
+}
+
+/* Style for the dropdown-menu links */
+.dropdown-menu a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Underline animation for dropdown-menu */
+.dropdown-menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* Adjust the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 1s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown-menu */
+.dropdown-menu a:hover {
+    color: #4CAF50;
+    /* Lighter green color on hover */
+}
+
+/* Hover effect for the underline in dropdown-menu */
+.dropdown-menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #4CAF50;
+    /* Lighter green color on hover */
+}

@@ -21,7 +21,7 @@
     position: fixed;
     top: 0;
     right: -250px;
-    z-index: 3;
+    z-index: 6;
     background-color: #ebeee3;
     overflow-x: hidden;
     transition: 0.5s;
