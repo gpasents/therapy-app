@@ -1,25 +1,12 @@
 <app-side-panel [isSidebarOpen]="togglePanel" (onClose)="toggle($event)">
 </app-side-panel>
 <app-header (togglePanel)="togglePanel = $event"></app-header>
-<div class="mt-5">
+<div class="mt-5 carousel-container">
   <app-carousel>
   </app-carousel>
 </div>
 <button id="scroll-up" (click)="scrollToTop()"><i class="icon icon-arrow-up"></i></button>
 
-<section id="association" class="scrollspy-section bg-accent padding-large margin-xlarge">
-  <div class="container">
-    <div class="row">
-      <div class="association-content">
-        <img src="../assets/images/association-logo1.png" alt="association-logo">
-        <img src="../assets/images/association-logo2.png" alt="association-logo">
-        <img src="../assets/images/association-logo3.png" alt="association-logo">
-        <img src="../assets/images/association-logo4.png" alt="association-logo">
-        <img src="../assets/images/association-logo5.png" alt="association-logo">
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="about" class="scrollspy-section margin-xlarge">
   <div class="container">
@@ -34,7 +21,7 @@
         <p>{{ 'aboutBio'
           | translate }}</p>
         <div class="btn-wrap">
-          <a href="#" class="btn btn-black btn-xlarge btn-rounded">Read More
+          <a href="#" class="btn btn-black btn-xlarge btn-rounded">Get to know me
             <i class="icon icon-arrow-right"></i></a>
         </div>
 
@@ -43,7 +30,6 @@
 
   </div>
 </section>
-
 
 <section id="why-us" class="scrollspy-section bg-accent padding-xlarge">
   <div class="container">
@@ -91,6 +77,22 @@
     </div>
   </div>
 </section>
+
+<section id="association" class="scrollspy-section bg-accent padding-large margin-xlarge">
+  <div class="container">
+    <div class="row">
+      <div class="association-content">
+        <img src="../assets/images/association-logo1.png" alt="association-logo">
+        <img src="../assets/images/association-logo2.png" alt="association-logo">
+        <img src="../assets/images/association-logo3.png" alt="association-logo">
+        <img src="../assets/images/association-logo4.png" alt="association-logo">
+        <img src="../assets/images/association-logo5.png" alt="association-logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section id="popular-items" class="herb-items scrollspy-section margin-xlarge">
   <div class="container">

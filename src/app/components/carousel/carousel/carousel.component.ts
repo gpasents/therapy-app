@@ -10,5 +10,5 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent {
 
-  images = ['../../../../assets/images/main-banner.png', '../../../../assets/images/main-banner.png', '../../../../assets/images/main-banner.png']
+  images = ['../../../../assets/images/banner-book.jpg']
 }
