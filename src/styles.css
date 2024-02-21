@@ -335,7 +335,6 @@ ol ol {
 
 ul li,
 ol li {
-    margin-bottom: 5px;
     outline: 0;
     list-style: none;
 }
@@ -1211,14 +1210,11 @@ html {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    padding: 40px;
     margin-right: 60px;
-    /* transition: 0.5s all ease-out; */
 }
 
 .main-logo a {
     margin: 0 auto;
-    /* transition: 0.5s all ease-out; */
 }
 
 /*----- Header Menu
@@ -1264,7 +1260,7 @@ nav#navbar ul.menu-list {
 }
 
 #navbar ul.menu-list a {
-    line-height: var(--header-height);
+    line-height: 40px;
     padding: 0 30px;
     text-decoration: none;
     font-size: 1.1em;
@@ -2121,7 +2117,7 @@ nav#navbar ul.menu-list {
 
 .contact-info {
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 13px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -2140,7 +2136,7 @@ nav#navbar ul.menu-list {
 
 .icon {
     color: #555;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .social-media {
