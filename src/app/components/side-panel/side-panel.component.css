@@ -24,9 +24,8 @@
     z-index: 7;
     background-color: #ebeee3;
     overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 60px;
-    line-height: var(--header-height);
+    line-height: 40px;
     padding: 0 30px;
     text-decoration: none;
     font-size: 1.1em;

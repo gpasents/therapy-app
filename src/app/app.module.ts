@@ -13,6 +13,8 @@ import { TranslationService } from './services/translation-service.service';
 import { CarouselComponent } from './components/carousel/carousel/carousel.component';
 import { SidePanelComponent } from './components/side-panel/side-panel.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 
@@ -26,6 +28,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguageSelectorComponent,
     SidePanelComponent,
     HeaderComponent,
+    MainPageComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
