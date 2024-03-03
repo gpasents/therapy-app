@@ -257,7 +257,7 @@ h6.light,
 :root {
   /* widths for rows and containers
        */
-  --header-height: 50px;
+  --header-height: 70px;
   --header-height-min: 20px;
 }
 
@@ -265,7 +265,7 @@ h6.light,
    */
 @media screen and (max-width: 600px) {
   :root {
-    --header-height: 50px;
+    --header-height: 70px;
     --header-height-min: 20px;
   }
 }
@@ -1218,9 +1218,6 @@ header {
   transition: 0.3s all ease-out;
 }
 
-header.fixed {
-}
-
 header.nav-up {
   top: -160px;
 }
@@ -2087,17 +2084,6 @@ p {
   .product-thumbnail-slider {
     height: 600px;
   }
-}
-
-.header {
-  height: 20px;
-  background-color: #fff;
-  color: #000;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  justify-content: right;
-  align-items: center;
 }
 
 .contact-info {

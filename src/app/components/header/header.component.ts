@@ -17,4 +17,8 @@ export class HeaderComponent {
   toggle() {
     this.togglePanel.emit(true);
   }
+
+  reloadPage() {
+    window.location.reload();
+  }
 }

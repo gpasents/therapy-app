@@ -1,6 +1,6 @@
 <div class="header-wrapper">
   <div style="background-color: #fff">
-    <div class="header container">
+    <div class="upper-header container">
       <div class="contact-info">
         <span
           ><i class="bi bi-telephone icon"></i>
@@ -26,11 +26,19 @@
       >
         <div class="container">
           <div id="header-wrap">
-            <div class="main-logo">
-              <a href="index.html"
-                ><img src="../assets/images/logo.png" alt="logo"
-              /></a>
-            </div>
+            <a href="index.html">
+              <div class="main-logo">
+                <img
+                  src="../assets/images/logo.png"
+                  class="logo-img"
+                  alt="logo"
+                />
+                <span>
+                  Lena<br />
+                  Georgiadi
+                </span>
+              </div>
+            </a>
             <nav id="navbar">
               <div class="main-menu" id="navigation">
                 <ul class="menu-list navbar-nav">
@@ -140,8 +148,14 @@
               <div class="language-wrapper">
                 <app-language-selector> </app-language-selector>
               </div>
+              <div class="btn-wrap btn-appointment">
+                <a
+                  routerLink="/about"
+                  class="btn btn-black btn-xlarge btn-rounded"
+                  >Book your appointment
+                </a>
+              </div>
               <button class="custom-toggle-btn" (click)="toggle()">
-                Menu
                 <span class="custom-menu-icon">&#9776;</span>
               </button>
             </nav>

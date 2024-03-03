@@ -1,4 +1,57 @@
+header {
+  height: var(--header-height);
+  transition: 0.3s all ease-out;
+}
+
+header.nav-up {
+  top: -160px;
+}
+
+#header-wrap {
+  display: flex;
+  background-color: #ebeee3;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#header-wrap nav#navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+nav#navbar ul.menu-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  position: relative;
+  list-style: none;
+}
+
+#navbar ul.menu-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul.menu-list a {
+  line-height: 40px;
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.5s all ease-out;
+}
+
+@media screen and (max-width: 991px) {
+  nav#navbar ul.menu-list {
+    display: none;
+  }
+}
+
 .language-wrapper {
+  margin-right: 70px;
   margin-left: 10px;
 }
 
@@ -118,4 +171,34 @@
   top: 0;
   left: 0;
   z-index: 5;
+}
+
+.upper-header {
+  height: 37.7px;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.btn-appointment a {
+  height: 50px;
+  margin-top: 0;
+  align-items: center;
+  display: flex;
+}
+
+.main-logo {
+  cursor: pointer;
+}
+
+.main-logo span {
+  font-size: 1.2em;
+}
+
+.logo-img {
+  max-height: 70px;
 }
