@@ -1,0 +1,15 @@
+.section-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-height: 400px;
+  }
+}
+.banner-section {
+  img {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+  }
+}

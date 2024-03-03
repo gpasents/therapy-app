@@ -1,26 +1,26 @@
-<div>
-  <app-side-panel [isSidebarOpen]="togglePanel" (onClose)="toggle($event)">
-  </app-side-panel>
-  <app-header id="home" (togglePanel)="togglePanel = $event"></app-header>
-  <button id="scroll-up" (click)="scrollToTop()"><i class="icon icon-arrow-up"></i></button>
-</div>
+<app-header id="home" (togglePanel)="togglePanel = $event"></app-header>
+<app-side-panel [isSidebarOpen]="togglePanel" (onClose)="toggle($event)">
+</app-side-panel>
+<button id="scroll-up" (click)="scrollToTop()">
+  <i class="icon icon-arrow-up"></i>
+</button>
 <router-outlet></router-outlet>
 <div id="footer-bottom" class="bg-accent padding-medium">
   <div class="container">
     <div class="row">
-
       <div class="col-md-12 footer-links">
         <div class="copyright">
-          <p>© 2021 TemplatesJungle. Designed by <a href="https://www.templatesjungle.com/"
-              target="_blank">TemplatesJungle</a></p>
+          <p>
+            © 2021 TemplatesJungle. Designed by
+            <a href="https://www.templatesjungle.com/" target="_blank"
+              >TemplatesJungle</a
+            >
+          </p>
         </div>
-
       </div>
-
     </div>
   </div>
 </div>
-
 
 <!-- <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

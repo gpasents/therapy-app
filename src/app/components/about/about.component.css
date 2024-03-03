@@ -1,7 +1,41 @@
 .banner-section {
+  position: relative;
   img {
     max-height: 300px;
     object-fit: cover;
     width: 100%;
   }
+}
+
+.section-img {
+  display: flex;
+  align-items: center;
+  img {
+    width: 570px;
+    height: 380px;
+    object-fit: cover;
+  }
+}
+
+.section-img .img-right {
+  justify-content: start;
+}
+.section-img .left {
+  justify-content: start;
+}
+
+.section-with-img .container .description {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-label {
+  position: absolute;
+  text-shadow: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-decoration: underline;
+  text-align: center;
 }

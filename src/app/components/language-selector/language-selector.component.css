@@ -1,8 +1,14 @@
 .language-image {
-    position: relative;
-    top: -1px;
-    width: 18px;
-    height: 18px;
-    max-width: 18px;
-    max-height: 18px;
+  position: relative;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.dropdown {
+  a {
+    cursor: pointer;
+  }
 }

@@ -1,34 +1,43 @@
 <section id="banner" class="banner-section">
+  <h1 class="banner-label section-title">
+    {{ "getToKnowMeTitle" | translate }}
+  </h1>
   <img
     src="../assets/images/banner.jpg"
-    alt="Get to know me"
+    alt="{{ 'getToKnowMeAltText' | translate }}"
     class="banner-image"
   />
 </section>
-<section id="about" class="scrollspy-section margin-xlarge">
+<section id="about" class="section-with-img">
   <div class="container">
     <div class="row">
       <div class="col-md-6 description">
         <div class="section-header">
-          <h2 class="section-title">About me</h2>
+          <h2 class="section-title">{{ "aboutTitle" | translate }}</h2>
         </div>
         <p>{{ "aboutBio" | translate }}</p>
       </div>
-      <div class="col-md-6 video-content">
-        <img src="../assets/images/lena.jpg" alt="lena" />
+      <div class="col-md-6 section-img img-right">
+        <img
+          src="../assets/images/lena.jpg"
+          alt="{{ 'aboutImageAltText' | translate }}"
+        />
       </div>
     </div>
   </div>
 </section>
-<section id="education" class="scrollspy-section margin-xlarge">
+<section id="education" class="section-with-img margin-xlarge">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 video-content">
-        <img src="../assets/images/lena.jpg" alt="lena" />
+      <div class="col-md-6 section-img left">
+        <img
+          src="../assets/images/lena.jpg"
+          alt="{{ 'educationImageAltText' | translate }}"
+        />
       </div>
       <div class="col-md-6 description">
         <div class="section-header">
-          <h2 class="section-title">Education</h2>
+          <h2 class="section-title">{{ "educationTitle" | translate }}</h2>
         </div>
         <p>{{ "educationBio" | translate }}</p>
       </div>
@@ -36,31 +45,37 @@
   </div>
 </section>
 
-<section id="experience" class="scrollspy-section margin-xlarge">
+<section id="experience" class="section-with-img margin-xlarge">
   <div class="container">
     <div class="row">
       <div class="col-md-6 description">
         <div class="section-header">
-          <h2 class="section-title">Experience</h2>
+          <h2 class="section-title">{{ "experienceTitle" | translate }}</h2>
         </div>
         <p>{{ "experienceBio" | translate }}</p>
       </div>
-      <div class="col-md-6 video-content">
-        <img src="../assets/images/lena.jpg" alt="lena" />
+      <div class="col-md-6 section-img img-right">
+        <img
+          src="../assets/images/lena.jpg"
+          alt="{{ 'experienceImageAltText' | translate }}"
+        />
       </div>
     </div>
   </div>
 </section>
 
-<section id="interests" class="scrollspy-section margin-xlarge">
+<section id="interests" class="section-with-img margin-xlarge">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 video-content">
-        <img src="../assets/images/lena.jpg" alt="lena" />
+      <div class="col-md-6 section-img left">
+        <img
+          src="../assets/images/lena.jpg"
+          alt="{{ 'interestsImageAltText' | translate }}"
+        />
       </div>
       <div class="col-md-6 description">
         <div class="section-header">
-          <h2 class="section-title">Interests</h2>
+          <h2 class="section-title">{{ "interestsTitle" | translate }}</h2>
         </div>
         <p>{{ "interestsBio" | translate }}</p>
       </div>

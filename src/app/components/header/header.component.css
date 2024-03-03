@@ -112,3 +112,10 @@
   background-color: #4caf50;
   /* Lighter green color on hover */
 }
+
+::ng-deep app-header > div:first-child {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}

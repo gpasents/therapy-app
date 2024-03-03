@@ -15,6 +15,7 @@ import { SidePanelComponent } from './components/side-panel/side-panel.component
 import { HeaderComponent } from './components/header/header.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutComponent } from './components/about/about.component';
+import { ServicesComponent } from './components/services/services.component';
 
 
 
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     MainPageComponent,
     AboutComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
