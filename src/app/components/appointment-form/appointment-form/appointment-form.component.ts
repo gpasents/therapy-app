@@ -13,9 +13,11 @@ import {
 })
 export class AppointmentFormComponent {
   appointmentForm: FormGroup;
+  captcha: string;
 
   constructor(private formBuilder: FormBuilder) {
     this.appointmentForm = new FormGroup({});
+    this.captcha = '';
   }
 
   ngOnInit() {
@@ -47,6 +49,9 @@ export class AppointmentFormComponent {
         this.markFormGroupTouched(control);
       }
     });
+  }
+  resolved(res: any) {
+    this.captcha = res;
   }
 
   // Getter for name control

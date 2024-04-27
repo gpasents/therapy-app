@@ -146,8 +146,18 @@
               placeholder="{{ 'notesPlaceholder' | translate }}"
             ></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary btn-block mt-4">
+          <div>
+            <re-captcha
+              (resolved)="resolved($event)"
+              siteKey="6LfSQ8kpAAAAANaT4S9riNASJJRNReY5qv5oVe8D"
+            ></re-captcha>
+          </div>
+          <button
+            [disabled]="!captcha"
+            class="fw-bold fs-5 mb-2 mt-2"
+            type="submit"
+            class="btn btn-primary btn-block mt-4"
+          >
             {{ "submitButton" | translate }}
           </button>
         </form>

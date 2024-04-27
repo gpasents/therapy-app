@@ -18,6 +18,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppointmentFormComponent } from './components/appointment-form/appointment-form/appointment-form.component';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgbModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RecaptchaModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
