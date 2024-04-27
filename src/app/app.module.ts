@@ -16,8 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppointmentFormComponent } from './components/appointment-form/appointment-form/appointment-form.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,12 +32,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     MainPageComponent,
     AboutComponent,
     ServicesComponent,
+    AppointmentFormComponent,
   ],
   imports: [
     BrowserModule,
     CarouselComponent,
     NgbModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -45,10 +47,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [LanguageService,
-    TranslationService],
-  bootstrap: [AppComponent]
+  providers: [LanguageService, TranslationService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

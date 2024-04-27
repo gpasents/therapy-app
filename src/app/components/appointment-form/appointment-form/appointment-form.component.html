@@ -1,0 +1,157 @@
+<section id="banner" class="banner-section">
+  <h1 class="banner-label section-title">
+    {{ "contactMeHeader" | translate }}
+  </h1>
+  <img
+    src="../assets/images/banner.jpg"
+    alt="{{ 'getToKnowMeAltText' | translate }}"
+    class="banner-image"
+  />
+</section>
+<section id="appointment-form" class="scrollspy-section margin-xlarge">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form [formGroup]="appointmentForm" (ngSubmit)="submitAppointment()">
+          <div class="form-group">
+            <label
+              for="name"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "nameLabel" | translate }}:</label
+            >
+            <input
+              type="text"
+              id="name"
+              [formControl]="nameCtrl"
+              class="form-control"
+              placeholder="{{ 'namePlaceholder' | translate }}"
+            />
+            <div
+              *ngIf="nameCtrl.errors && nameCtrl.touched"
+              class="invalid-feedback"
+            >
+              {{ "nameError" | translate }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="email"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "emailLabel" | translate }}:</label
+            >
+            <input
+              type="email"
+              id="email"
+              [formControl]="emailCtrl"
+              class="form-control"
+              placeholder="{{ 'emailPlaceholder' | translate }}"
+            />
+            <div
+              *ngIf="emailCtrl.errors && emailCtrl.touched"
+              class="invalid-feedback"
+            >
+              {{ "emailError" | translate }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="phone"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "phoneLabel" | translate }}:</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              [formControl]="phoneCtrl"
+              class="form-control"
+              placeholder="{{ 'phonePlaceholder' | translate }}"
+            />
+            <div
+              *ngIf="phoneCtrl.errors && phoneCtrl.touched"
+              class="invalid-feedback"
+            >
+              {{ "phoneError" | translate }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="preferred_contact"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "preferredContactLabel" | translate }}:</label
+            >
+            <select
+              id="preferred_contact"
+              [formControl]="preferredContactCtrl"
+              class="form-control"
+            >
+              <option value="phone">{{ "phoneOption" | translate }}</option>
+              <option value="email">{{ "emailOption" | translate }}</option>
+            </select>
+            <div
+              *ngIf="
+                preferredContactCtrl.errors && preferredContactCtrl.touched
+              "
+              class="invalid-feedback"
+            >
+              {{ "preferredContactError" | translate }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="issue"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "issueLabel" | translate }}:</label
+            >
+            <select
+              id="issue"
+              [formControl]="issueCtrl"
+              multiple
+              class="form-control"
+            >
+              <option value="anxiety">{{ "anxietyOption" | translate }}</option>
+              <option value="depression">
+                {{ "depressionOption" | translate }}
+              </option>
+              <option value="stress">{{ "stressOption" | translate }}</option>
+            </select>
+            <div
+              *ngIf="issueCtrl.errors && issueCtrl.touched"
+              class="invalid-feedback"
+            >
+              {{ "issueError" | translate }}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="notes"
+              class="fw-bold fs-5 mb-2"
+              style="padding-left: 10px"
+              >{{ "notesLabel" | translate }}:</label
+            >
+            <textarea
+              id="notes"
+              [formControl]="notesCtrl"
+              rows="4"
+              class="form-control"
+              placeholder="{{ 'notesPlaceholder' | translate }}"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block mt-4">
+            {{ "submitButton" | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

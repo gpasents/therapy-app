@@ -1123,6 +1123,7 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+
   .padding-small,
   .padding-medium,
   .padding-large,
@@ -1155,6 +1156,7 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+
   .margin-small,
   .margin-medium,
   .margin-large,
@@ -1412,24 +1414,24 @@ nav#navbar ul.menu-list {
   z-index: 3;
 }
 
-.side-nav-bar #menu-toggle:checked ~ .menu-btn > span {
+.side-nav-bar #menu-toggle:checked~.menu-btn>span {
   transform: rotate(45deg);
   z-index: 2;
 }
 
-.side-nav-bar #menu-toggle:checked ~ .menu-btn > span::before {
+.side-nav-bar #menu-toggle:checked~.menu-btn>span::before {
   top: 0;
   transform: rotate(0);
   background: #f6f6f6;
 }
 
-.side-nav-bar #menu-toggle:checked ~ .menu-btn > span::after {
+.side-nav-bar #menu-toggle:checked~.menu-btn>span::after {
   top: 0;
   transform: rotate(90deg);
   background: #f6f6f6;
 }
 
-.side-nav-bar #menu-toggle:checked ~ .side-nav-menu {
+.side-nav-bar #menu-toggle:checked~.side-nav-menu {
   visibility: visible;
   right: 0;
 }
@@ -1459,9 +1461,9 @@ nav#navbar ul.menu-list {
   .onepage-menu .menu-btn > span::after {
       background-color: var(--dark-color);
   }*/
-.side-nav-bar .menu-btn > span,
-.side-nav-bar .menu-btn > span::before,
-.side-nav-bar .menu-btn > span::after {
+.side-nav-bar .menu-btn>span,
+.side-nav-bar .menu-btn>span::before,
+.side-nav-bar .menu-btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -1470,12 +1472,12 @@ nav#navbar ul.menu-list {
   transition-duration: 0.25s;
 }
 
-.side-nav-bar .menu-btn > span::before {
+.side-nav-bar .menu-btn>span::before {
   content: "";
   top: -8px;
 }
 
-.side-nav-bar .menu-btn > span::after {
+.side-nav-bar .menu-btn>span::after {
   content: "";
   top: 8px;
 }
@@ -2002,6 +2004,7 @@ nav#navbar ul.menu-list {
 p {
   font-size: 16px;
 }
+
 .single-product span.price {
   font-size: 2em;
   font-weight: 500;
@@ -2032,7 +2035,7 @@ p {
   color: var(--grey-color);
 }
 
-.post-grid .post-content span > i.icon {
+.post-grid .post-content span>i.icon {
   padding-right: 10px;
   color: var(--grey-color);
 }

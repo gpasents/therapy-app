@@ -23,5 +23,22 @@
   "therapeuticApproachDescription": "Learn about our therapeutic approach, tailored to meet your individual needs. Our therapist combines various evidence-based techniques to provide personalized care and support throughout your journey to well-being.",
   "specializationsDescription": "Explore our areas of specialization, where our therapist offers expertise and guidance. From anxiety and depression to relationship counseling, we are dedicated to helping you navigate life's challenges.",
   "counselingServicesDescription": "Discover our counseling services designed to promote mental and emotional wellness. Our therapist provides a safe and confidential space for you to explore your thoughts, feelings, and concerns.",
-  "wellnessProgramsDescription": "Explore our wellness programs aimed at enhancing your overall well-being. From stress management techniques to mindfulness practices, we offer holistic approaches to support your health and happiness."
+  "wellnessProgramsDescription": "Explore our wellness programs aimed at enhancing your overall well-being. From stress management techniques to mindfulness practices, we offer holistic approaches to support your health and happiness.",
+  "nameLabel": "Name",
+  "namePlaceholder": "Enter your name",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Enter your email",
+  "phoneLabel": "Phone",
+  "phonePlaceholder": "Enter your phone number",
+  "preferredContactLabel": "Preferred Contact Method",
+  "phoneOption": "Phone",
+  "emailOption": "Email",
+  "issueLabel": "Issue(s) you'd like to address",
+  "anxietyOption": "Anxiety",
+  "depressionOption": "Depression",
+  "stressOption": "Stress",
+  "notesLabel": "Additional Notes",
+  "notesPlaceholder": "Enter any additional notes",
+  "submitButton": "Submit Appointment",
+  "contactMeHeader": "Contact me"
 }
