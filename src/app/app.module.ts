@@ -19,7 +19,6 @@ import { ServicesComponent } from './components/services/services.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppointmentFormComponent } from './components/appointment-form/appointment-form/appointment-form.component';
 import { RecaptchaModule } from 'ng-recaptcha';
-import reactive_form_directives from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
