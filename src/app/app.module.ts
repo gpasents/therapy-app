@@ -16,9 +16,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppointmentFormComponent } from './components/appointment-form/appointment-form/appointment-form.component';
 import { RecaptchaModule } from 'ng-recaptcha';
+import reactive_form_directives from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +41,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselComponent,
     NgbModule,
     HttpClientModule,
-    ReactiveFormsModule,
     RecaptchaModule,
     TranslateModule.forRoot({
       loader: {
@@ -49,6 +49,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [LanguageService, TranslationService],

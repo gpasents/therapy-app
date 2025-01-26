@@ -12,7 +12,7 @@ import {
   styleUrls: ['./appointment-form.component.css'],
 })
 export class AppointmentFormComponent {
-  appointmentForm: FormGroup;
+  appointmentForm!: FormGroup;
   captcha: string;
 
   constructor(private formBuilder: FormBuilder) {
